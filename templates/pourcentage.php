@@ -160,7 +160,6 @@ template('header', array(
                 event.preventDefault();
 
                 const formData = new FormData(event.target).entries()
-                console.log(formData);
 
                 const response = await fetch('/api/post', {
                     method: 'POST',
@@ -175,7 +174,6 @@ template('header', array(
                 let inputName = Object.keys(result.data)[0];
 
                 event.target.querySelector(`input[name="${inputName}"]`).value = result.data[inputName];
-                console.log(result)
 
             })
         }

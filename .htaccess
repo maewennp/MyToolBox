@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+SetEnvIf Request_URI ^/admin auth=1
+
+AuthName "Merci de vous connecter"
+AuthType Basic
+AuthUserFile "moncheminici/php-toolbox/.htpasswd"
+
+# first, allow everybody
+Order Allow,Deny
+Satisfy any
+Allow from all
+Require valid-user
+# then, deny only if required
+Deny from env=auth

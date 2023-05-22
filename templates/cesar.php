@@ -8,7 +8,7 @@ template('header', array(
     <section id="homepage" class="homepage">
         <div class="container">
             <div class="section-title">
-                <h2>Coder ou décoder un texte à l'aide du Code César </h2>
+                <h2>Chiffrer ou déchiffrer un texte à l'aide du Code César </h2>
             </div>
 
             <div class="row">
@@ -19,7 +19,7 @@ template('header', array(
                         </p>
 
                         <p>
-                            Le code César consiste à substituer une lettre par une autre un plus loin dans l'alphabet, c'est-à-dire qu'une lettre est toujours remplacée par la même lettre et que l'on applique le même décalage à toutes les lettres, cela rend très simple le décode d'un message puisqu'il y a 25 décalages possibles.
+                            Ainsi, le code César consiste à substituer une lettre par une autre plus loin dans l'alphabet, c'est-à-dire qu'une lettre est toujours remplacée par la même lettre et que l'on applique le même décalage à toutes les lettres. Cela rend très simple le décodage d'un message puisqu'il y a 26 décalages possibles.
                         </p>
                     </blockquote>
                     <figcaption><cite><a href="https://calculis.net/code-cesar">Calculis.net</a></cite></figcaption>
@@ -47,7 +47,7 @@ template('header', array(
 
                             <div class="col-12 mt-4">
                                 <label for="result">Résultat</label>
-                                <p id="result"></p>
+                                <p style= "word-wrap: break-word; white-space: normal" id="result"></p>
                             </div>
                         </div>
 
@@ -79,7 +79,7 @@ template('header', array(
 
                             <div class="col-12 mt-4">
                                 <label for="clear">Résultat</label>
-                                <p id="clear"></p>
+                                <p style= "word-wrap: break-word; white-space: normal" id="clear"></p>
                             </div>
                         </div>
 

@@ -90,7 +90,7 @@ switch ($body->form){
         ];
         echo json_encode($data);
         break;
-    case 'euros-dollars':
+    /*case 'euros-dollars':
 
         $EUR = null;
         $USD = null;
@@ -103,6 +103,31 @@ switch ($body->form){
 
         $result = convertEuroDollars($EUR, $USD);
 
+        $data = [
+            'response' => 'success',
+            'message' => 'Calcul réussi',
+            'data' => $result
+        ];
+        echo json_encode($data);
+        break;*/
+
+    case 'euros-dollars':
+        $amount = null;
+        $from = null;
+        $to = null;
+
+        if(property_exists($body, 'amount')){
+            $amount = $body->amount;
+        }
+        if(property_exists($body, 'from')){
+            $from = $body->from;
+        }
+        if(property_exists($body, 'to')){
+            $to = $body->to;
+        }
+  
+        $result = convertCurrency($amount, $from, $to);
+    
         $data = [
             'response' => 'success',
             'message' => 'Calcul réussi',

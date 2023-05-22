@@ -14,7 +14,7 @@ template('header', array(
             <div class="row">
                 <figure class="bg-light rounded p-3">
                     <blockquote cite="https://www.huxley.net/bnw/four.html">
-                        <p>En mathématiques élémentaires, la règle de trois ou règle de proportionnalité ou produit en croix est une méthode mathématique permettant de déterminer une quatrième proportionnelle. Plus précisément, trois nombres a, b et c étant donnés, la règle de trois permet, à partir de l'égalité des produits en croix, de trouver le nombre d tel que (a, b) soit proportionnel à (c, d).</p>
+                        <p>En mathématiques élémentaires, la règle de trois ou règle de proportionnalité ou produit en croix, est une méthode mathématique permettant de déterminer une quatrième proportionnelle. Plus précisément, trois nombres a, b et c étant donnés, la règle de trois permet, à partir de l'égalité des produits en croix, de trouver le nombre d tel que (a, b) soit proportionnel à (c, d).</p>
                     </blockquote>
                     <figcaption><cite><a href="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois">Wikipedia</a></cite></figcaption>
                 </figure>
@@ -34,7 +34,7 @@ template('header', array(
                             </div>
 
                             <div class="d-inline-flex align-items-center">
-                                <span class="ver"> ----> </span>
+                                <span class="ver"> ----> </span>  
                             </div>
                             <div class="col">
                                 <label for="c" aria-hidden="true" hidden>Nombre C</label>
@@ -53,7 +53,7 @@ template('header', array(
                             </div>
 
                             <div class="d-inline-flex align-items-center">
-                                <span class="ver"> ----> </span>
+                                <span class="ver"> ----> </span> 
                             </div>
                             <div class="col">
                                 <label for="d" aria-hidden="true" hidden>Nombre D</label>
@@ -99,7 +99,8 @@ template('header', array(
                 let inputName = Object.keys(result.data)[0];
 
                 event.target.querySelector(`input[name="${inputName}"]`).value = result.data[inputName];
-        }
+            }) /* décalage de l'acolade (une indentation) + ajout d'une parenthèse*/
+        } /*ajout de l'acolade*/
     });
 </script>
 

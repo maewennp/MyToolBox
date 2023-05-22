@@ -11,7 +11,7 @@ $logs = select('logs');
 <section id="homepage" class="homepage">
     <div class="container">
         <div class="section-title">
-            <h2>Espace adminstrateur</h2>
+            <h2>Espace administrateur</h2>
         </div>
 
         <div class="row">

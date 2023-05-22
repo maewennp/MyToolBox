@@ -33,18 +33,46 @@
     }
 
     function cesar($clear, $key, $reverse = false){
-        $alphabet = 'abcdefghijklmnopqrstuvwxyz';
-        $alphabet = str_split($alphabet);
+        $lowercaseAlphabet = 'abcdefghijklmnopqrstuvwxyz';
+        $uppercaseAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $lowercaseAlphabet = str_split($lowercaseAlphabet);
+        $uppercaseAlphabet = str_split($uppercaseAlphabet);
         $clear = str_split($clear);
         $result = '';
 
         foreach ($clear as $letter){
-            $index = array_search($letter, $alphabet);
-            $index = $reverse ? $index - $key : $index + $key;
-            if($index > 25){
-                $index = $index - 26;
+            if ($letter === ' ') {      // Si le caractère est un espace
+                $result .= ' ';         // alors le résultat sera un espace
+            } elseif ($letter === "'") { // Si le caractère est une apostrophe
+                if ($reverse) {
+                    $result .= "'";     // Ajouter l'apostrophe dans le résultat lors du déchiffrement
+                }
+            } elseif (in_array($letter, $lowercaseAlphabet)){  // si le caractère est une lettre en minuscule
+                $alphabet = $lowercaseAlphabet;
+                $index = array_search($letter, $alphabet);
+                $index = $reverse ? $index - $key : $index + $key;
+                if($index > 25){
+                    $index = $index - 26;
+                }
+                if($index < 0){
+                    $index = $index + 26;
+                }
+                $result .= $alphabet[$index];
+            } elseif (in_array($letter, $uppercaseAlphabet)){  // si le caractère est une lettre en majuscule
+                $alphabet = $uppercaseAlphabet;
+                $index = array_search($letter, $alphabet);
+                $index = $reverse ? $index - $key : $index + $key;
+                if($index > 25){
+                    $index = $index - 26;
+                }
+                if($index < 0){
+                    $index = $index + 26;
+                }
+                $result .= $alphabet[$index];
+            
+            } else {  //si c'est un caractère spécial qui ne fait pas parti de l'alphabet majuscule ou minuscule
+                $result .= $letter;
             }
-            $result .= $alphabet[$index];
         }
 
         if($reverse){
@@ -58,7 +86,7 @@
         }
     }
 
-    function convertEuroDollars($euro = null, $dollars = null){
+    /*function convertEuroDollars($euro = null, $dollars = null){
         $currency = $euro === null ? 'USD' : 'EUR';
         $reverseCurrency = $currency === 'EUR' ? 'USD' : 'EUR';
 
@@ -80,4 +108,19 @@
                 'USD' => $dollars,
             ];
         }
+    }*/
+
+    function convertCurrency($amount = null, $from, $to){ 
+        
+        $url = 'https://open.er-api.com/v6/latest/' . $from;
+        
+        $data = file_get_contents($url);
+        $data = json_decode($data, true);
+        $rate = $data['rates'][$to];
+        
+        $convertedAmount = $amount * $rate;
+        return [
+            'result' => $convertedAmount,
+        ];
     }
+

@@ -6,7 +6,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
-SetEnvIf Request_URI ^/admin auth=1
+#SetEnvIf Request_URI ^/admin auth=1      mis en commentaire car le login et mdp d'accès ne fonctionnaient pas
 
 AuthName "Merci de vous connecter"
 AuthType Basic

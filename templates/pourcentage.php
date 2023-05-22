@@ -9,7 +9,7 @@ template('header', array(
     <div class="container">
         <div class="section-title">
             <h2>Calcul de pourcentage </h2>
-            <p>La calculatrice de pourcentage vous permez de calculez facilement le pourcentage de n’importe quel chiffre avec la calculatrice de pourcentage en ligne, une calculatrice utile et simple à utiliser.</p>
+            <p>La calculatrice de pourcentage vous permet de calculer facilement le pourcentage de n’importe quel chiffre avec la calculatrice de pourcentage en ligne, une calculatrice utile et simple à utiliser.</p>
         </div>
 
         <div class="row">

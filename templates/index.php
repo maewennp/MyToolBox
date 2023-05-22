@@ -13,6 +13,8 @@ try {
         '/decimal-hexadecimal',
         '/regle-de-trois',
         '/admin',
+        '/contact',
+        '/masse-volume.php',
         /* ROUTES API */
         '/api/post',
     ));

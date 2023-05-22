@@ -43,10 +43,6 @@
         foreach ($clear as $letter){
             if ($letter === ' ') {      // Si le caractère est un espace
                 $result .= ' ';         // alors le résultat sera un espace
-            } elseif ($letter === "'") { // Si le caractère est une apostrophe
-                if ($reverse) {
-                    $result .= "'";     // Ajouter l'apostrophe dans le résultat lors du déchiffrement
-                }
             } elseif (in_array($letter, $lowercaseAlphabet)){  // si le caractère est une lettre en minuscule
                 $alphabet = $lowercaseAlphabet;
                 $index = array_search($letter, $alphabet);

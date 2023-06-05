@@ -19,10 +19,10 @@ template('header', array(
                         </p>
 
                         <p>
-                            Ainsi, le code César consiste à substituer une lettre par une autre plus loin dans l'alphabet, c'est-à-dire qu'une lettre est toujours remplacée par la même lettre et que l'on applique le même décalage à toutes les lettres. Cela rend très simple le décodage d'un message puisqu'il y a 26 décalages possibles.
+                            Ainsi, le code César consiste à substituer une lettre par une autre plus loin dans l'alphabet, c'est-à-dire, qu'une lettre est toujours remplacée par la même lettre et que l'on applique le même décalage à toutes les lettres. Cela rend très simple le décodage d'un message puisqu'il y a 26 décalages possibles.
                         </p>
                     </blockquote>
-                    <figcaption><cite><a href="https://calculis.net/code-cesar">Calculis.net</a></cite></figcaption>
+                    <figcaption><cite><a href="https://calculis.net/code-cesar" target="_blank">Calculis.net</a></cite></figcaption>
                 </figure>
             </div>
 

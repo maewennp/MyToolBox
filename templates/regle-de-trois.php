@@ -16,7 +16,7 @@ template('header', array(
                     <blockquote cite="https://www.huxley.net/bnw/four.html">
                         <p>En mathématiques élémentaires, la règle de trois ou règle de proportionnalité ou produit en croix, est une méthode mathématique permettant de déterminer une quatrième proportionnelle. Plus précisément, trois nombres a, b et c étant donnés, la règle de trois permet, à partir de l'égalité des produits en croix, de trouver le nombre d tel que (a, b) soit proportionnel à (c, d).</p>
                     </blockquote>
-                    <figcaption><cite><a href="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois">Wikipedia</a></cite></figcaption>
+                    <figcaption><cite><a href="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
             </div>
 

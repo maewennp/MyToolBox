@@ -1,4 +1,6 @@
-/**
+/** Idem que pour le template.css, ce sont des bout de code JS supprimés du main.js mais mis de côté dans ce fichier template, au cas où je voudrais les utiliser plus tard
+ * 
+ * 
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {

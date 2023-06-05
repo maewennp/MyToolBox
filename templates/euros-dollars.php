@@ -36,7 +36,7 @@ template('header', array(
                                 </div>
                             </div>
 
-                            <div class="d-inline-flex align-items-center ">
+                            <div class="d-inline-flex align-items-center">
                                 <span class="ver">vaut actuellement</span>
                             </div>
 

@@ -19,7 +19,7 @@
                         Le système binaire est utile pour représenter le fonctionnement de l'électronique numérique utilisée dans les ordinateurs. Il est donc utilisé par les langages de programmation de bas niveau.
                     </p>
                 </blockquote>
-                <figcaption><cite><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire">Wikipedia</a></cite></figcaption>
+                <figcaption><cite><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire" target="_blank">Wikipedia</a></cite></figcaption>
             </figure>
         </div>
 

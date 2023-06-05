@@ -21,7 +21,7 @@ template('header', array(
                         <div class="col-2">
                             <label for="percent" aria-hidden="true" hidden>Pourcentage</label>
                             <div class="input-group">
-                                <input id="percent" name="percent" type="text" class="form-control" required value="50">
+                                <input id="percent" name="percent" type="text" class="form-control" required value="">
                                 <div class="input-group-append">
                                     <div class="input-group-text">%</div>
                                 </div>
@@ -33,7 +33,7 @@ template('header', array(
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">de</div>
                                 </div>
-                                <input id="of" name="of" type="text" class="form-control" required value="50">
+                                <input id="of" name="of" type="text" class="form-control" required value="">
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@ template('header', array(
                         <div class="col-2">
                             <label for="result" aria-hidden="true" hidden>Nombre</label>
                             <div class="input-group">
-                                <input id="result" name="result" type="text" class="form-control" required value="10">
+                                <input id="result" name="result" type="text" class="form-control" required value="">
                             </div>
                         </div>
 
@@ -75,7 +75,7 @@ template('header', array(
                         <div class="col-2">
                             <label for="percent" aria-hidden="true" hidden>Nombre</label>
                             <div class="input-group">
-                                <input id="percent" name="percent" type="text" class="form-control" required value="10">
+                                <input id="percent" name="percent" type="text" class="form-control" required value="">
                                 <div class="input-group-append">
                                     <div class="input-group-text">%</div>
                                 </div>

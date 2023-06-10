@@ -39,35 +39,36 @@
         $uppercaseAlphabet = str_split($uppercaseAlphabet);
         $clear = str_split($clear);
         $result = '';
-
-        foreach ($clear as $letter){
-            if ($letter === ' ') {      // Si le caractère est un espace
-                $result .= ' ';         // alors le résultat sera un espace
-            } elseif (in_array($letter, $lowercaseAlphabet)){  // si le caractère est une lettre en minuscule
-                $alphabet = $lowercaseAlphabet;
-                $index = array_search($letter, $alphabet);
-                $index = $reverse ? $index - $key : $index + $key;
-                if($index > 25){
-                    $index = $index - 26;
+        if($key >=1 || $key <= -1){
+            foreach ($clear as $letter){
+                if ($letter === ' ') {      // Si le caractère est un espace
+                    $result .= ' ';         // alors le résultat sera un espace
+                } elseif (in_array($letter, $lowercaseAlphabet)){  // si le caractère est une lettre en minuscule
+                    $alphabet = $lowercaseAlphabet;
+                    $index = array_search($letter, $alphabet);
+                    $index = $reverse ? $index - $key : $index + $key;
+                    while($index > 25){
+                        $index = $index - 26;
+                    }
+                    while($index < 0){
+                        $index = $index + 26;
+                    }
+                    $result .= $alphabet[$index];
+                } elseif (in_array($letter, $uppercaseAlphabet)){  // si le caractère est une lettre en majuscule
+                    $alphabet = $uppercaseAlphabet;
+                    $index = array_search($letter, $alphabet);
+                    $index = $reverse ? $index - $key : $index + $key;
+                    while($index > 25){
+                        $index = $index - 26;
+                    }
+                    while($index < 0){
+                        $index = $index + 26;
+                    }
+                    $result .= $alphabet[$index];
+                
+                } else {  //si c'est un caractère spécial qui ne fait pas parti de l'alphabet majuscule ou minuscule
+                    $result .= $letter;
                 }
-                if($index < 0){
-                    $index = $index + 26;
-                }
-                $result .= $alphabet[$index];
-            } elseif (in_array($letter, $uppercaseAlphabet)){  // si le caractère est une lettre en majuscule
-                $alphabet = $uppercaseAlphabet;
-                $index = array_search($letter, $alphabet);
-                $index = $reverse ? $index - $key : $index + $key;
-                if($index > 25){
-                    $index = $index - 26;
-                }
-                if($index < 0){
-                    $index = $index + 26;
-                }
-                $result .= $alphabet[$index];
-            
-            } else {  //si c'est un caractère spécial qui ne fait pas parti de l'alphabet majuscule ou minuscule
-                $result .= $letter;
             }
         }
 

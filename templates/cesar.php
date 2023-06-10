@@ -27,7 +27,7 @@ template('header', array(
             </div>
 
             <div class="row justify-content-around">
-                <fieldset class="col-5 mt-4">
+                <fieldset class="col-md-5 mt-4">
                     <legend>Chiffrer</legend>
                     <form action="" method="POST" name="cesar">
                         <div class="form-group row">
@@ -41,25 +41,25 @@ template('header', array(
                             <div class="col-12 mt-4">
                                 <label for="key">Clé</label>
                                 <div class="input-group">
-                                    <input id="key" name="key" type="number" class="form-control">
+                                    <input id="key" name="key" type="number" class="form-select">
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-4 text-break">
                                 <label for="result">Résultat</label>
-                                <p style= "word-wrap: break-word; white-space: normal" id="result"></p>
+                                <p id="result"></p>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-12">
+                            <div class="col-12 mb-2">
                                 <button type="submit" class="btn-block btn btn-primary">Chiffrer</button>
                             </div>
                         </div>
                     </form>
                 </fieldset>
 
-                <fieldset class="col-5 mt-4  ms-md-auto">
+                <fieldset class="col-md-5 mt-4  ms-md-auto">
                     <legend>Déchiffrer</legend>
                     <form action="" method="POST" name="cesar">
                         <div class="form-group row">
@@ -73,13 +73,13 @@ template('header', array(
                             <div class="col-12 mt-4">
                                 <label for="key">Clé</label>
                                 <div class="input-group">
-                                    <input id="key" name="key" type="number" class="form-control" >
+                                    <input id="key" name="key" type="number" class="form-select" >
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-4 text-break">
                                 <label for="clear">Résultat</label>
-                                <p style= "word-wrap: break-word; white-space: normal" id="clear"></p>
+                                <p id="clear"></p>
                             </div>
                         </div>
 

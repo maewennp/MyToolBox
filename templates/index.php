@@ -14,7 +14,7 @@ try {
         '/regle-de-trois',
         '/admin',
         '/contact',
-        '/masse-volume.php',
+        '/volume.php',
         /* ROUTES API */
         '/api/post',
     ));

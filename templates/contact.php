@@ -93,14 +93,16 @@ if (!empty($_POST)) {
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <label for="name" class="">Votre nom</label>
+                                    <label for="name" class="">Nom</label>
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
                                 <div class="md-form mb-0">
-                                    <label for="email" class="">Votre email (pour vous répondre)</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Votre email"> <!-- changement de type text -> email pour la validation back -->
+                                <label for="email" class="">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Votre email (pour vous répondre)"> <!-- changement de type text -> email pour la validation back -->
                                 </div>
                             </div>
                         </div>
@@ -131,7 +133,7 @@ if (!empty($_POST)) {
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="text-center text-md-start">
+                                <div class="text-center mt-2 text-md-end">
                                     <button type="submit" class="btn  btn-block btn-primary">Envoyer ma demande</button>
                                 </div>
                             </div>

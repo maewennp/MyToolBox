@@ -15,7 +15,8 @@
                 <blockquote cite="https://www.huxley.net/bnw/four.html">
                     <p>
                         Le système binaire (du latin binārĭus, « double ») est le système de numération utilisant la base 2. On nomme couramment bit (de l'anglais binary digit, soit « chiffre binaire ») les chiffres de la numération binaire positionnelle. Un bit peut prendre deux valeurs, notées par convention 0 et 1.
-                    </p>   <p>
+                    </p>   
+                    <p>
                         Le système binaire est utile pour représenter le fonctionnement de l'électronique numérique utilisée dans les ordinateurs. Il est donc utilisé par les langages de programmation de bas niveau.
                     </p>
                 </blockquote>
@@ -24,7 +25,7 @@
         </div>
 
         <div class="row">
-            <fieldset class="col-6 mt-4">
+            <fieldset class="col-12 pb-2 mt-4">
                 <legend>Convertisseur</legend>
                 <form action="" name="decimal-hexadecimal">
                     <div class="form-group row">
@@ -66,18 +67,7 @@
             }
 
             function convertToBinary(x) {
-                let bin = 0;
-                let rem, i = 1, step = 1;
-                while (x !== 0) {
-                    rem = x % 2;
-                    console.log(
-                        `Step ${step++}: ${x}/2, Remainder = ${rem}, Quotient = ${parseInt(x/2)}`
-                    );
-                    x = parseInt(x / 2);
-                    bin = bin + rem * i;
-                    i = i * 10;
-                }
-                return bin;
+                return Math.abs(x).toString(2);
             }
 
             decimal.addEventListener('input', () => {

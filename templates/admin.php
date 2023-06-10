@@ -21,23 +21,23 @@ $logs = select('logs');
 
             <div class="col-12">
                 <div class="card">
-                    <div class="card-body">
-                        <table class="table">
+                    <div class="card-body table-reponsive">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Message</th>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Message</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php foreach ($messages as $message): ?>
                                 <tr>
-                                    <th scope="row"><?php echo $message['id']; ?></th>
+                                    <th><?php echo $message['id']; ?></th>
                                     <td><?php echo $message['name']; ?></td>
                                     <td><?php echo $message['email']; ?></td>
-                                    <td><?php echo $message['message']; ?></td>
+                                    <td class="text-break"><?php echo $message['message']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>
@@ -55,22 +55,22 @@ $logs = select('logs');
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <table class="table">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Formulaire</th>
-                                <th scope="col">Data</th>
-                                <th scope="col">Result</th>
+                                <th>#</th>
+                                <th>Formulaire</th>
+                                <th>Data</th>
+                                <th>Result</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php foreach ($logs as $log): ?>
                                 <tr>
-                                    <th scope="row"><?php echo $log['id']; ?></th>
+                                    <th><?php echo $log['id']; ?></th>
                                     <td><?php echo $log['form']; ?></td>
-                                    <td><?php echo $log['data']; ?></td>
-                                    <td><?php echo $log['result']; ?></td>
+                                    <td class="text-break"><?php echo $log['data']; ?></td>
+                                    <td class="text-break"><?php echo $log['result']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>

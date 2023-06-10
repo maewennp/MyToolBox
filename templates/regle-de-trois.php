@@ -25,7 +25,7 @@ template('header', array(
                 <fieldset class="col-12 mt-4">
                     <legend>Calculer X</legend>
                     <form action="" method="POST" name="regle-de-trois">
-                        <div class="form-group row">
+                        <div class="form-group row mb-2">
                             <div class="col">
                                 <label for="a" aria-hidden="true" hidden>Nombre A</label>
                                 <div class="input-group">
@@ -33,7 +33,7 @@ template('header', array(
                                 </div>
                             </div>
 
-                            <div class="d-inline-flex align-items-center">
+                            <div class="col-2 text-center">
                                 <span class="ver"> ----> </span>  
                             </div>
                             <div class="col">
@@ -44,7 +44,7 @@ template('header', array(
                             </div>
                         </div>
 
-                       <div class="form-group row">
+                       <div class="form-group row mb-2">
                             <div class="col">
                                 <label for="b" aria-hidden="true" hidden>Nombre B</label>
                                 <div class="input-group">
@@ -52,7 +52,7 @@ template('header', array(
                                 </div>
                             </div>
 
-                            <div class="d-inline-flex align-items-center">
+                            <div class="col-2 text-center">
                                 <span class="ver"> ----> </span> 
                             </div>
                             <div class="col">
@@ -63,8 +63,8 @@ template('header', array(
                             </div>
                         </div>
 
-                       <div class="form-group row">
-                           <div class="col">
+                       <div class="form-group row mb-2">
+                           <div class="col-md-2 mt-2 mt-md-0 m-auto col-4">
                                <button name="submit" type="submit" class="btn btn-primary btn-block">Calculer</button>
                            </div>
                        </div>

@@ -83,29 +83,6 @@
         }
     }
 
-    /*function convertEuroDollars($euro = null, $dollars = null){
-        $currency = $euro === null ? 'USD' : 'EUR';
-        $reverseCurrency = $currency === 'EUR' ? 'USD' : 'EUR';
-
-        $url = 'https://open.er-api.com/v6/latest/' . $currency;
-
-        $data = file_get_contents($url);
-        $data = json_decode($data, true);
-        $rate = $data['rates'][$reverseCurrency];
-
-        if($euro === null){
-            $euro = $dollars * $rate;
-            return [
-                'EUR' => $euro,
-            ];
-        }
-        if($dollars === null){
-            $dollars = $euro * $rate;
-            return [
-                'USD' => $dollars,
-            ];
-        }
-    }*/
 
     function convertCurrency($amount = null, $from, $to){ 
         
@@ -118,6 +95,12 @@
         $convertedAmount = $amount * $rate;
         return [
             'result' => $convertedAmount,
+        ];
+    }
+
+    function convertVolume($volume, $from, $to){
+        return [
+            'result' => $volume * $from / $to
         ];
     }
 

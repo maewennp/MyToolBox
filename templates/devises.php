@@ -15,7 +15,7 @@ template('header', array(
 
                 <fieldset class="col-12 mt-4">
                     <legend>Montant à convertir</legend>
-                    <form action="" method="post" name="euros-dollars">
+                    <form action="" method="post" name="devises">
                         <div class="form-group row mb-3">
                             <div class="col-md-4">
                                 <label for="amount" aria-hidden="true" hidden>Montant</label>

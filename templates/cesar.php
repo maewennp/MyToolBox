@@ -13,7 +13,7 @@ template('header', array(
 
             <div class="row">
                 <figure class="bg-light rounded p-3">
-                    <blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <blockquote cite="https://calculis.net/code-cesar">
                         <p>
                             Le code César est une méthode de cryptage qui consiste à décaler chaque lettre de l'alphabet d'un certain rang. Ce code est le plus simple et le plus connu de la cryptographie, mais cela reste très amusant à utiliser.
                         </p>
@@ -33,7 +33,7 @@ template('header', array(
                         <div class="form-group row">
                             <div class="col-12">
                                 <label for="clear">Le texte à chiffrer</label>
-                                <div class="input-group">
+                                <div class="input-group mt-2">
                                     <textarea id="clear" name="clear" rows="10" class="form-control" required></textarea>
                                 </div>
                             </div>
@@ -45,9 +45,9 @@ template('header', array(
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-4 text-break">
+                            <div class="col-12 mt-4">
                                 <label for="result">Résultat</label>
-                                <p id="result"></p>
+                                <p id="result" class="text-break"></p>
                             </div>
                         </div>
 

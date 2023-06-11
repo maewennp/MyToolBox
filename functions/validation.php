@@ -23,7 +23,7 @@ function validate(array $items, array $rule_items) {
     $result = array();
     foreach($rule_items as $item_key => $item_value) {
 
-        // Jika terdapat array key '$item_key' pada $items (mis. $item_key berisi string 'name', dan $items berisi array asosiatif $items['name'])
+        // S'il y a une clé de tableau '$item_key' dans $items (par exemple, $item_key contient la chaîne de caractères 'name', et $items contient un tableau associatif $items['name'])"
         if (array_key_exists($item_key, $items)) {
             $form_items[$item_key] = trim($items[$item_key]);
             $form_label = $item_value['label'];
@@ -60,6 +60,10 @@ function validate(array $items, array $rule_items) {
                             $result['danger'][] = $form_label . ' does not match';
                         }
                         break;
+                    case 'filter':
+                        if (!filter_var($form_items[$item_key], FILTER_VALIDATE_EMAIL)) {
+                            $result['danger'][] = $form_label . ' is not a valid email';
+                        }
 
                 }
 

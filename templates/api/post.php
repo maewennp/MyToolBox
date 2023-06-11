@@ -90,28 +90,8 @@ switch ($body->form){
         ];
         echo json_encode($data);
         break;
-    /*case 'euros-dollars':
 
-        $EUR = null;
-        $USD = null;
-        if(property_exists($body, 'EUR')){
-            $EUR = $body->EUR;
-        }
-        if(property_exists($body, 'USD')){
-            $USD = $body->USD;
-        }
-
-        $result = convertEuroDollars($EUR, $USD);
-
-        $data = [
-            'response' => 'success',
-            'message' => 'Calcul réussi',
-            'data' => $result
-        ];
-        echo json_encode($data);
-        break;*/
-
-    case 'euros-dollars':
+    case 'devises':
         $amount = null;
         $from = null;
         $to = null;
@@ -135,6 +115,31 @@ switch ($body->form){
         ];
         echo json_encode($data);
         break;
+
+        case 'volume':
+            $volume = null;
+            $from = null;
+            $to = null;
+    
+            if(property_exists($body, 'volume')){
+                $volume = $body->volume;
+            }
+            if(property_exists($body, 'from')){
+                $from = $body->from;
+            }
+            if(property_exists($body, 'to')){
+                $to = $body->to;
+            }
+      
+            $result = convertVolume($volume, $from, $to);
+        
+            $data = [
+                'response' => 'success',
+                'message' => 'Calcul réussi',
+                'data' => $result
+            ];
+            echo json_encode($data);
+            break;
 }
 
 logSubmitToDatabase($body, $result);

@@ -6,10 +6,12 @@
  */
 
 // Pourquoi pas utiliser un .ENV ?
+$env_variables = parse_ini_file(__DIR__ . '/.env');
+
 return array(
-    'host' => '127.0.0.1',
-    'user' => 'root',
-    'password' => '',
-    'port'=> 3306,
-    'name' => 'mytoolbox'
+    'host' => $env_variables['BDD_HOST'],
+    'user' => $env_variables['BDD_USER'],
+    'password' => $env_variables['BDD_PASSWORD'],
+    'port'=> $env_variables['BDD_PORT'],
+    'name' => $env_variables['BDD_NAME']
 );

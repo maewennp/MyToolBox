@@ -1,6 +1,6 @@
 <?php
 template('header', array(
-    'title' => 'Boite à outils • Masse et volume',
+    'title' => 'Boite à outils • Devise',
 ));
 ?>
 
@@ -8,112 +8,59 @@ template('header', array(
     <section id="homepage" class="homepage">
         <div class="container">
             <div class="section-title">
-                <h2>Convertisseur de volume</h2>
+                <h2>Convertisseur de volumes</h2>
             </div>
 
             <div class="row">
 
                 <fieldset class="col-12 mt-4">
-                    <legend>Masse à convertir</legend>
+                    <legend>Volume à convertir</legend>
                     <form action="" method="post" name="volume">
-                        <div class="form-group row">
-                            <div class="col">
-                                <label for="amount" aria-hidden="true" hidden>Volume</label>
+                        <div class="form-group row mb-3">
+                            <div class="col-md-4">
+                                <label for="volume" aria-hidden="true" hidden>Volume</label>
                                 <div class="input-group">
-                                    <input id="amount" name="amount" type="number" class="form-control" required>
+                                    <input id="volume" name="volume" type="number" class="form-control" required>
                                     <div class="input-group-append">
                                         <select id="from" name="from" class="form-select" aria-label="From" required>
                                             <option value="" disabled selected>De</option>
-                                            <option value="L" selected>EUR</option>
-                                            <option value="DL">USD</option>
-                                            <option value="CL">GBP</option>
-                                            <option value="ML">JPY</option>
-                                            <option value="DAL">CHF</option>
-                                            <option value="HL">CAD</option>
-                                            <option value="KL">AED</option>
+                                            <option value="0.001">mL</option>
+                                            <option value="0.01">cL</option>
+                                            <option value="0.1">dL</option>
+                                            <option value="1" selected>L</option>
+                                            <option value="10">daL</option>
+                                            <option value="100">hL</option>
+                                            <option value="1000">kL</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="d-inline-flex align-items-center">
+                            <div class="text-center col-md-2 mb-1 mt-1">
                                 <span class="ver">vaut actuellement</span>
                             </div>
 
-                            <div class="col">
-                                <label for="result" aria-hidden="true" hidden>Montant converti</label>
+                            <div class="col-md-4">
+                                <label for="result" aria-hidden="true" hidden>Volume converti</label>
                                 <div class="input-group">
                                     <input id="result" name="result" type="number" class="form-control" disabled> 
                                     <div class="input-group-append">
                                         <div class="input-group-text">
                                             <select id="to" name="to" class="form-select" aria-label="To" required>
                                                 <option value="" disabled selected>À</option>
-                                                <option value="EUR">EUR</option>
-                                                <option value="USD"selected>USD</option>
-                                                <option value="GBP">GBP</option>
-                                                <option value="JPY">JPY</option>
-                                                <option value="CHF">CHF</option>
-                                                <option value="CAD">CAD</option>
-                                                <option value="AED">AED</option>
+                                                <option value="0.001" selected>mL</option>
+                                                <option value="0.01">cL</option>
+                                                <option value="0.1">dL</option>
+                                                <option value="1">L</option>
+                                                <option value="10">daL</option>
+                                                <option value="100">hL</option>
+                                                <option value="1000">kL</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <button name="submit" type="submit" class="btn btn-primary btn-block">Convertir</button>
-                            </div>                   
-                        </div>
-                    </form>
-                </fieldset> 
-                <fieldset class="col-12 mt-4">
-                    <legend>Masse à convertir</legend>
-                    <form action="" method="post" name="euros-dollars">
-                        <div class="form-group row">
-                            <div class="col">
-                                <label for="amount" aria-hidden="true" hidden>Montant</label>
-                                <div class="input-group">
-                                    <input id="amount" name="amount" type="number" class="form-control" required>
-                                    <div class="input-group-append">
-                                        <select id="from" name="from" class="form-select" aria-label="From" required>
-                                            <option value="" disabled selected>De</option>
-                                            <option value="EUR" selected>EUR</option>
-                                            <option value="USD">USD</option>
-                                            <option value="GBP">GBP</option>
-                                            <option value="JPY">JPY</option>
-                                            <option value="CHF">CHF</option>
-                                            <option value="CAD">CAD</option>
-                                            <option value="AED">AED</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="d-inline-flex align-items-center">
-                                <span class="ver">vaut actuellement</span>
-                            </div>
-
-                            <div class="col">
-                                <label for="result" aria-hidden="true" hidden>Montant converti</label>
-                                <div class="input-group">
-                                    <input id="result" name="result" type="number" class="form-control" disabled> 
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <select id="to" name="to" class="form-select" aria-label="To" required>
-                                                <option value="" disabled selected>À</option>
-                                                <option value="EUR">EUR</option>
-                                                <option value="USD"selected>USD</option>
-                                                <option value="GBP">GBP</option>
-                                                <option value="JPY">JPY</option>
-                                                <option value="CHF">CHF</option>
-                                                <option value="CAD">CAD</option>
-                                                <option value="AED">AED</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
+                            <div class="col-md-2 mt-2 mt-md-0 m-auto col-4">
                                 <button name="submit" type="submit" class="btn btn-primary btn-block">Convertir</button>
                             </div>                   
                         </div>

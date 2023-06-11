@@ -13,7 +13,7 @@ template('header', array(
 
             <div class="row">
                 <figure class="bg-light rounded p-3">
-                    <blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <blockquote cite="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois">
                         <p>En mathématiques élémentaires, la règle de trois ou règle de proportionnalité ou produit en croix, est une méthode mathématique permettant de déterminer une quatrième proportionnelle. Plus précisément, trois nombres a, b et c étant donnés, la règle de trois permet, à partir de l'égalité des produits en croix, de trouver le nombre d tel que (a, b) soit proportionnel à (c, d).</p>
                     </blockquote>
                     <figcaption><cite><a href="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois" target="_blank">Wikipedia</a></cite></figcaption>
@@ -84,7 +84,7 @@ template('header', array(
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
 
-                const formData = new FormData(event.target).entries()
+                const formData = new FormData(event.target).entries();
 
                 const response = await fetch('/api/post', {
                     method: 'POST',

@@ -12,7 +12,7 @@
 
         <div class="row">
             <figure class="bg-light rounded p-3">
-                <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <blockquote cite="https://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire">
                     <p>
                         Le système binaire (du latin binārĭus, « double ») est le système de numération utilisant la base 2. On nomme couramment bit (de l'anglais binary digit, soit « chiffre binaire ») les chiffres de la numération binaire positionnelle. Un bit peut prendre deux valeurs, notées par convention 0 et 1.
                     </p>   

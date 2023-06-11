@@ -61,10 +61,10 @@ function validate(array $items, array $rule_items) {
                         }
                         break;
                     case 'filter':
-                        if (!filter_var($form_items[$item_key], FILTER_VALIDATE_EMAIL)) {
+                        if (!filter_var($form_items[$item_key], $rule_value)) {
                             $result['danger'][] = $form_label . ' is not a valid email';
                         }
-
+                        break;
                 }
 
                 $result['item'] = $form_items;

@@ -26,7 +26,7 @@ if (!empty($_POST)) {
             'required' => true,
             'sanitize' => 'email',
             'regexp' => '/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i',
-            'filter' => 'email',
+            'filter' => FILTER_VALIDATE_EMAIL,
         ),
         'subject' => array(
             'label' => 'Subject',
@@ -37,14 +37,10 @@ if (!empty($_POST)) {
             'label' => 'Message',
             'required' => true,
             'sanitize' => 'string',
-        ),
-        'checkbox' => array(
-            'label' => 'Validation',
-            'required' => true,
         )
     ));
 
-    $result = check_validation($validated_items, array('remove' => 'checkbox'));
+    $result = check_validation($validated_items);
 
     if (!is_passed($result)) {
         $messages = $result;
@@ -132,8 +128,8 @@ if (!empty($_POST)) {
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="true" name="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="true" name="checkbox" id="flexCheckDefault" required>
+                                    <label class="form-check-label" for="checkbox">
                                         J'accepte que mes données soient utilisées dans le cadre de demande de fonctionnalité
                                     </label>
                                 </div>

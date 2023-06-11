@@ -44,7 +44,7 @@
                 <li><a href="<?= home_url(); ?>/pourcentage" class="nav-link scrollto <?= is_current_url('/pourcentage') ? 'active' : '' ?>"><i class="bx bx-book-content"></i> <span>Pourcentage</span></a></li>
                 <li><a href="<?= home_url(); ?>/decimal-hexadecimal" class="nav-link scrollto <?= is_current_url('/decimal-hexadecimal') ? 'active' : '' ?>"><i class="bx bx-server"></i> <span>Décimal en hexadécimal</span></a></li>
                 <li><a href="<?= home_url(); ?>/regle-de-trois" class="nav-link scrollto <?= is_current_url('/regle-de-trois') ? 'active' : '' ?>"><i class="bx bx-envelope"></i> <span>Règle de trois</span></a></li>
-                <li><a href="<?= home_url(); ?>/volume" class="nav-link scrollto <?= is_current_url('/volume') ? 'active' : '' ?>"><i class="bx bx-envelope"></i> <span>Convertisseur de volume</span></a></li>
+                <li><a href="<?= home_url(); ?>/volume" class="nav-link scrollto <?= is_current_url('/volume') ? 'active' : '' ?>"><i class="bx bx-envelope"></i> <span>Convertisseur de volumes</span></a></li>
                 <li><a href="<?= home_url(); ?>/contact" class="nav-link scrollto <?= is_current_url('/contact') ? 'active' : '' ?>"><i class="bx bx-home"></i> <span>Contactez nous</span></a></li>
                 <li><a href="<?= home_url(); ?>/admin" class="nav-link scrollto <?= is_current_url('/admin') ? 'active' : '' ?>"><i class="bx bx-envelope"></i> <span>Espace gestion</span></a></li>
             </ul>

@@ -5,7 +5,7 @@
  * Save your database configuration here
  */
 
-// Pourquoi pas utiliser un .ENV ?
+
 $env_variables = parse_ini_file(__DIR__ . '/.env');
 
 return array(

@@ -7,7 +7,7 @@
 <section id="homepage" class="homepage">
     <div class="container">
         <div class="section-title">
-            <h2>Convertisseur système décimal positif en binaire </h2>
+            <h2>Convertisseur système décimal positif en héxadécimal et en binaire </h2>
         </div>
 
         <div class="row">
@@ -15,9 +15,10 @@
                 <blockquote cite="https://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire">
                     <p>
                         Le système binaire (du latin binārĭus, « double ») est le système de numération utilisant la base 2. On nomme couramment bit (de l'anglais binary digit, soit « chiffre binaire ») les chiffres de la numération binaire positionnelle. Un bit peut prendre deux valeurs, notées par convention 0 et 1.
+                        Le système binaire est utile pour représenter le fonctionnement de l'électronique numérique utilisée dans les ordinateurs. Il est donc utilisé par les langages de programmation de bas niveau.
                     </p>   
                     <p>
-                        Le système binaire est utile pour représenter le fonctionnement de l'électronique numérique utilisée dans les ordinateurs. Il est donc utilisé par les langages de programmation de bas niveau.
+                        Le mot hexadécimal est composé des termes hexa et decem. Hexa vient du grec et signifie « six » tandis que decem est le mot latin pour « dix ». Le système hexadécimal est donc un système de valeur qui représente les nombres en base 16. Cela signifie que le système hexadécimal utilise 16 chiffres différents.
                     </p>
                 </blockquote>
                 <figcaption><cite><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire" target="_blank">Wikipedia</a></cite></figcaption>

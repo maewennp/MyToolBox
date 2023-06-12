@@ -8,7 +8,7 @@ template('header', array(
     <section id="homepage" class="homepage">
         <div class="container">
             <div class="section-title">
-                <h2>Chiffrer ou déchiffrer un texte à l'aide du Code César </h2>
+                <h2>Le Code César </h2>
             </div>
 
             <div class="row">
@@ -20,6 +20,7 @@ template('header', array(
 
                         <p>
                             Ainsi, le code César consiste à substituer une lettre par une autre plus loin dans l'alphabet, c'est-à-dire, qu'une lettre est toujours remplacée par la même lettre et que l'on applique le même décalage à toutes les lettres. Cela rend très simple le décodage d'un message puisqu'il y a 26 décalages possibles.
+                            <br>À vous de chiffrer et déchiffrer vos textes !
                         </p>
                     </blockquote>
                     <figcaption><cite><a href="https://calculis.net/code-cesar" target="_blank">Calculis.net</a></cite></figcaption>

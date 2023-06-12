@@ -9,9 +9,9 @@
 $env_variables = parse_ini_file(__DIR__ . '/.env');
 
 return array(
-    'host' => $env_variables['BDD_HOST'],
-    'user' => $env_variables['BDD_USER'],
-    'password' => $env_variables['BDD_PASSWORD'],
-    'port'=> $env_variables['BDD_PORT'],
-    'name' => $env_variables['BDD_NAME']
+    'host' => $env_variables['DB_HOST'],
+    'user' => $env_variables['DB_USER'],
+    'password' => $env_variables['DB_PASSWORD'],
+    'port'=> $env_variables['DB_PORT'],
+    'name' => $env_variables['DB_NAME']
 );

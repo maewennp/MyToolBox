@@ -31,22 +31,22 @@ template('header', array(
                 <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon"><i class="bi bi-card-checklist"></i></div>
                     <h4 class="title"><a href="<?= home_url(); ?>/devises" class="nav-link scrollto <?= is_current_url('/devises') ? 'active' : '' ?>">Convertisseur de devises</a></h4>
-                    <p class="description">Convertissez vos devises. <br>Plusieurs choix de devises</p>
+                    <p class="description">Convertissez vos devises. <br>Plusieurs choix de devises possibles !</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon"><i class="bi bi-bar-chart"></i></div>
                     <h4 class="title"><a href="<?= home_url(); ?>/pourcentage" class="nav-link scrollto <?= is_current_url('/pourcentage') ? 'active' : '' ?>">Pourcentage</a></h4>
-                    <p class="description">Calculez le pourcentage d'un nombre sous toutes ses formes</p>
+                    <p class="description">Calculez le pourcentage d'un nombre sous toutes ses formes.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="bi bi-binoculars"></i></div>
                     <h4 class="title"><a href="<?= home_url(); ?>/decimal-hexadecimal" class="nav-link scrollto <?= is_current_url('/decimal-hexadecimal') ? 'active' : '' ?>">Décimal en héxadécimal</a></h4>
-                    <p class="description">Donnez un nombre, on vous donnera son héxadécimal et son binaire</p>
+                    <p class="description">Donnez un nombre, la boîte à outils vous donnera son héxadécimal et son binaire.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon"><i class="bi bi-brightness-high"></i></div>
-                    <h4 class="title"><a href="<?= home_url(); ?>/regle-de-trois" class="nav-link scrollto <?= is_current_url('/regle-de-trois') ? 'active' : '' ?>">Règle de troix</a></h4>
-                    <p class="description">Découvrer la règle de trois en un clic</p>
+                    <h4 class="title"><a href="<?= home_url(); ?>/regle-de-trois" class="nav-link scrollto <?= is_current_url('/regle-de-trois') ? 'active' : '' ?>">Règle de trois</a></h4>
+                    <p class="description">Découvrez la règle de trois en un clic.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                     <div class="icon"><i class="bi bi-calendar4-week"></i></div>

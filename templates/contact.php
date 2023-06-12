@@ -130,7 +130,7 @@ if (!empty($_POST)) {
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="true" name="checkbox" id="flexCheckDefault" required>
                                     <label class="form-check-label" for="checkbox">
-                                        J'accepte que mes données soient utilisées dans le cadre de demande de fonctionnalité
+                                        J'accepte que mes données soient utilisées dans le cadre de demande de fonctionnalité (obligatoire)
                                     </label>
                                 </div>
                             </div>
